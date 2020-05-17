@@ -1,0 +1,72 @@
+<!--pages/index/index.wxml-->
+<view class="page-section-spacing">
+	<view class="index_container">
+		<!-- 首页p1 -->
+		<image class="index_p1" mode="scaleToFill" src="../../images/index/首页-1-顶部海报.jpg"></image>
+		<!-- 首页p2 -->
+		<view class="count">
+			<image class="index_p2" mode="scaleToFill" src="../../images/index/首页-2-活动倒计时.jpg"></image>
+			<!-- 倒计时 -->
+			<view class="count_main">
+				<text>
+				{{clock}}{{micro_second}}
+				</text>
+			</view>
+		</view>
+		<!-- 首页p3 -->
+		<image class="index_p3" mode="scaleToFill" src="../../images/index/首页-3-抢购数字显示.jpg"></image>
+		<!-- 首页p4 -->
+		<swiper class='u-wrp-bnr' vertical autoplay='true' interval='5000' duration='1000' circular='true'>
+			<block wx:for="{{bnrUrl}}" wx:for-index="index">
+				<swiper-item>
+					<image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+				</swiper-item>
+			</block>
+		</swiper>
+		<!-- 首页p5 -->
+		<image class="index_p5" mode="scaleToFill" src="../../images/index/首页-5-合并图.jpg"></image>
+		<!-- 底部按钮 -->
+		<view class="bottom_button">
+			<image bindtap="actioncnt" src="../../images/index/tel_black.png"></image>
+			<button size="mini" bindtap="showModal" type="warn">参加活动</button>
+		</view>
+
+		<!-- 弹幕 -->
+		<view class="dm_container">
+			<!-- 显示区 -->
+			<view class="{{isChecked?'is_checked':'normal'}}">
+				<block wx:for="{{doommData}}" wx:key="id">
+					<view wx:if="{{item.display}}" class="aon" style="animation: first {{item.time}}s linear forwards;top:{{item.top}}%;color:{{item.color}};">
+						<image class="icon_avatar" src="../../images/index/icon_avatar_boy.png"></image>
+						{{item.text}}
+					</view>
+				</block>
+			</view>
+			<view bindtap="change" class="dm_button">
+				<image src="../../images/index/{{dm_show?'dm_open':'dm_close'}}.png"></image>
+			</view>
+		</view>
+		<!-- 弹出支付框 -->
+		<view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+			<view class="modal-cancel" bindtap="hideModal"></view>
+			<view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
+				<!-- 底部弹出框 -->
+				<view class="dialog_container">
+					<view class="dialog_1">
+						<text>快来加入我们！</text>
+						<text>距离活动结束还有</text>
+						<text>{{clock}}小时</text>
+					</view>
+					<view class="dialog_2">
+						<button class="gobuy" type="warn">支付</button>
+					</view>
+					<view class='Mcancel' bindtap='mCancel'>
+						<text>取消</text>
+					</view>
+				</view>
+
+
+			</view>
+		</view>
+	</view>
+</view>

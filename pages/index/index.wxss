@@ -1,0 +1,181 @@
+/* pages/index/index.wxss */
+
+.index_container {
+  width: auto;
+  margin: 0 0;
+}
+.index_p1 {
+  height: 463.5px;
+  width: 100%;
+}
+/* 倒计时 */
+.count {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.count .index_p2 {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+}
+.count .count_main {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  /* background-color: #FFFFFF; */
+  display: flex;
+  justify-content: space-around;
+}
+.count .count_main text {
+  color: yellowgreen;
+  font-size: 38px;
+  height: auto;
+  margin: 15px;
+}
+.index_p3 {
+  width: 100%;
+  height: 42px;
+}
+
+/* 用户数据微信用户 */
+.u-wrp-bnr {
+  width: 100%;
+  height: 500rpx;
+  display: block;
+  position: relative;
+  background: #f0f0f0;
+}
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+}
+.index_p5 {
+  width: 100%;
+  height: 3153px;
+}
+/* 底部按钮 */
+.bottom_button {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  height: 71px;
+  width: 100%;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.bottom_button image {
+  height: 71px;
+  width: 71px;
+  margin-left: 10px;
+}
+.bottom_button button {
+  flex-grow: 1;
+  height: 50px;
+  /* margin: 10px 20px 10px 10px; */
+  margin-right: 10px;
+  margin-right: 10px;  
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+/* 弹幕css */
+.dm_button{
+  position: fixed;
+  bottom: 130px;
+  left: 0;
+}
+.dm_button image {
+  height: 33px;
+  width: 33px;
+}
+.aon{
+position: fixed;
+white-space:nowrap;/* 防止向下换行*/
+animation-timing-function: linear;
+animation-fill-mode: none;
+height: 40px;
+padding-right: 15px;
+display: flex;
+align-items: center;
+font-size: 20px;
+border-radius: 20px;
+background-color: #570404;
+}
+
+.icon_avatar {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.normal {
+  z-index: 3;
+  height: 50%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+.is_checked {
+  opacity: 0;
+}
+
+@keyframes first{
+  from{left: 100%; }
+  to{left: -100%;}
+}
+
+/* 弹出框 */
+.arrow{
+  display:inline-block;
+  border:6px solid transparent;
+  border-top-color:#000;
+  margin-left:8px;
+  position:relative;
+  top:6rpx;
+}
+/* ---------------------------- */
+/*模态框*/
+.modal{position:fixed; top:0; right:0; bottom:0; left:0; z-index:1000;}
+.modal-cancel{position:absolute; z-index:2000; top:0; right:0; bottom: 0; left:0; background:rgba(0,0,0,0.3);}
+.bottom-dialog-body{width:100%; position:absolute; z-index:3000; bottom:0; left:0;}
+/*动画前初始位置*/
+.bottom-positon{-webkit-transform:translateY(100%);transform:translateY(100%);}
+ 
+ 
+/* 底部弹出框 */
+.dialog_container {
+  height: 200px;
+  width: 100%;
+  background-color: #FF2313;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.dialog_1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dialog_1 text {
+  color: #ffffff;
+  font-size: 12px;
+}
+.dialog_2 {
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gobuy {
+  height: 48px;
+  width: 319px;
+  font-size: 20px;
+}

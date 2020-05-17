@@ -1,0 +1,43 @@
+/* pages/discount/discount.wxss */
+.discount_container, discount_bg {
+  height: 100vh;
+  width: 100%;
+  background-color: #D70910;
+}
+.class_main {
+  height: 186.5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D70910;
+  border-bottom: 4px solid #ffffff;
+}
+
+.class_main .class_img {
+  height: 158px;
+  width: 117px;
+}
+
+.class_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 186.5px;
+  width: 150px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.text_title {
+  margin-top: 32px;
+  margin-bottom: 11px;
+}
+.buy_btn {
+  margin-top: 22px;
+  font-size: 16px;
+}
+.buy_btn3 {
+  margin-top: 10px;
+  font-size: 16px;
+}

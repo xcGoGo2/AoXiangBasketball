@@ -1,0 +1,49 @@
+<!--pages/order/order.wxml-->
+<view class="order_container">
+	<!-- 预约标题 -->
+	<view class="order_title">
+		<view class="order_title_c">预约打球</view>
+		<view class="order_title_e">consulation</view>
+	</view>
+	<form catchsubmit="formSubmit" catchreset="formReset">
+		<view class="order_container">
+
+			<!-- 姓名 -->
+			<view class="weui_container">
+				<view class="weui-cells__title">姓名<span style="color: red">*</span></view>
+				<view class="weui-cell_input">
+					<input class="name-input" auto-focus placeholder-style="font-size: 12px" placeholder-style="font-size: 12px" placeholder="请输入姓名" />
+				</view>
+			</view>
+
+			<!-- 电话 -->
+			<view class="weui_container">
+				<view class="weui-cells__title">电话<span style="color: red">*</span></view>
+				<view class="weui-cell_input">
+					<input class="phone-input" placeholder-style="font-size: 12px" auto-focus placeholder="电话" />
+				</view>
+			</view>
+
+			<!-- 预约时间 -->
+			<view class="weui_container">
+				<view class="weui-cells__title">预约时间<span style="color: red">*</span></view>
+				<view class="weui-cell_input">
+					<input class="time-input" placeholder-style="font-size: 12px" auto-focus placeholder="请输入预约时间" />
+				</view>
+			</view>
+
+			<!-- 预约备注 -->
+			<view class="weui_container">
+				<view class="weui-cells__title">预约备注</view>
+				<view class="weui-cell_input">
+					<textarea class="tip-input" placeholder-style="font-size: 12px" placeholder="备注"></textarea>
+				</view>
+			</view>
+
+			<!-- 提交 -->
+			<view class="btn-area">
+				<button style="margin: 30rpx 20px" type="warn" formType="submit">提交</button>
+			</view>
+		</view>
+	</form>
+</view>

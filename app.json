@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/discount/discount",
+    "pages/order/order",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "./images/global/ic_on/1.png",
+        "iconPath": "./images/global/ic_on/2.png",
+        "text": "联系客服"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "selectedIconPath": "./images/global/ic_on/3.png",
+        "iconPath": "./images/global/ic_on/4.png",
+        "text": "在线预约"
+      },
+      {
+        "pagePath": "pages/discount/discount",
+        "selectedIconPath": "./images/global/ic_on/5.png",
+        "iconPath": "./images/global/ic_on/6.png",
+        "text": "支付抢订特惠名额"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "selectedIconPath": "./images/global/ic_on/5.png",
+        "iconPath": "./images/global/ic_on/6.png",
+        "text": "测试"
+      }
+    ]
+  }
+}

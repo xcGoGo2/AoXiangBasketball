@@ -1,0 +1,43 @@
+<!--pages/discount/discount.wxml-->
+<view class="discount_container">
+  <view class="discount_bg">
+  <!-- 课程1 -->
+    <view class="class_main">
+    <image class="class_img" src="../../images/discount/特惠抢购1.png"></image>
+    <view class="class_text">
+      <text class="text_title">NO.1全年特惠班</text>
+      <view class="text_body">
+        <text>支付69元抵699元</text>
+        <text>送1188元豪华礼包</text>
+      </view>
+      <button class="buy_btn">￥69抢福利一</button>
+    </view>
+    </view>
+  <!-- 课程2 -->
+    <view class="class_main">
+    <image class="class_img" src="../../images/discount/特惠抢购2.png"></image>
+    <view class="class_text">
+      <text class="text_title">NO.2暑假特惠班</text>
+      <view class ="text_body">
+        <text>支付29元抵299元</text>
+        <text>送660元大礼包</text>
+      </view>
+      <button class="buy_btn">￥29抢福利二</button>
+    </view>
+    </view>
+    <!-- 课程3 -->
+    <view class="class_main">
+    <image class="class_img" src="../../images/discount/特惠抢购3.png"></image>
+    <view class="class_text">
+      <text class="text_title">NO.3组团定单礼</text>
+      <view class="text_body">
+        <text>二人团/六人团</text>
+        <text>邀请朋友一起组团</text>
+        <text>时尚拉干箱/健康麦杆菜饭</text>
+      </view>
+      <button class="buy_btn3">去拼团</button>
+    </view>
+    </view>
+  </view>
+  
+</view>
