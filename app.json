@@ -31,7 +31,8 @@
         "selectedIconPath": "./images/global/ic_on/5.png",
         "iconPath": "./images/global/ic_on/6.png",
         "text": "支付抢订特惠名额"
-      },
+      }
+      ,
       {
         "pagePath": "pages/test/test",
         "selectedIconPath": "./images/global/ic_on/5.png",

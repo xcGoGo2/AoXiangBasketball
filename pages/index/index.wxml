@@ -8,9 +8,8 @@
 			<image class="index_p2" mode="scaleToFill" src="../../images/index/首页-2-活动倒计时.jpg"></image>
 			<!-- 倒计时 -->
 			<view class="count_main">
-				<text>
-				{{clock}}{{micro_second}}
-				</text>
+				<text class="time">{{d}}：{{h}}：{{m}}：{{s}}</text>
+				<text class="time_mean" space="ensp">DAY   HOURS  MIN    SEC</text>
 			</view>
 		</view>
 		<!-- 首页p3 -->
@@ -25,11 +24,12 @@
 		</swiper>
 		<!-- 首页p5 -->
 		<image class="index_p5" mode="scaleToFill" src="../../images/index/首页-5-合并图.jpg"></image>
-		<!-- 底部按钮 -->
+
+		<!-- 底部按钮
 		<view class="bottom_button">
 			<image bindtap="actioncnt" src="../../images/index/tel_black.png"></image>
 			<button size="mini" bindtap="showModal" type="warn">参加活动</button>
-		</view>
+		</view> -->
 
 		<!-- 弹幕 -->
 		<view class="dm_container">
@@ -46,11 +46,12 @@
 				<image src="../../images/index/{{dm_show?'dm_open':'dm_close'}}.png"></image>
 			</view>
 		</view>
+
 		<!-- 弹出支付框 -->
-		<view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+		<!-- <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
 			<view class="modal-cancel" bindtap="hideModal"></view>
 			<view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
-				<!-- 底部弹出框 -->
+				底部弹出框
 				<view class="dialog_container">
 					<view class="dialog_1">
 						<text>快来加入我们！</text>
@@ -67,6 +68,12 @@
 
 
 			</view>
+		</view> -->
+
+		<!-- 音乐播放 -->
+		<view class='music {{on? "on": ""}}'>
+			<image src='../../images/index/music.png' style='width: 60rpx;height: 60rpx;' bindtap='stop'></image>
 		</view>
+
 	</view>
 </view>

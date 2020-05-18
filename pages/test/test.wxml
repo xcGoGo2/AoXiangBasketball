@@ -1,10 +1,5 @@
 
 <!-- wxml -->
-<swiper class='u-wrp-bnr' vertical autoplay='true' interval='5000' duration='1000' circular='true'>
-  <block wx:for="{{bnrUrl}}" wx:for-index="index">
-    <swiper-item>
-      <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
-    </swiper-item>
-  </block>
-</swiper>
+<text>还有
+{{d}}天{{h}}时{{m}}分{{s}}秒</text>
 <!-- wxml -->
