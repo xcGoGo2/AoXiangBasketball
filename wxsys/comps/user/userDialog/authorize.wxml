@@ -1,0 +1,31 @@
+<view class="x-page" navigationBarTitleText="授权" id="page">  
+  <view class="weui-loader-full {{_random1.loadingNum <= 0 ?'weui-loader-hide':''}}" style="z-index: 10001;" id="_random1"> 
+    <view class="ball-scale-ripple-multiple"> 
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/> 
+    </view> 
+  </view>  
+    
+  <view id="inVisibleCompContainer"/>  
+  <view id="view" style="height:120px"/>  
+  <view class="x-row" id="row"> 
+    <view class="x-col x-col-flex-1" id="col"/>  
+    <view class="x-col x-col-flex-8" id="col1"> 
+      <icon type="safe_warn" id="icon2" size="40"/>  
+      <text id="text" style="padding-left:12px">{{text.text}}</text>  
+      <view id="view2" style="height:60px"/>  
+      <button class="wx-btn" id="button" open-type="getUserInfo" type="primary" loading="{{button.debounce}}" data-compid="{{button.compid}}" data-pageid="{{__pageid__}}" bindgetuserinfo="dispatchBind" data-bindgetuserinfo="{{button.compid}}:getuserinfo"> 
+        <icon id="icon" type="wx-btn-icon" class=" wx-icon"/>  
+        <view class="wx-btn-label" id="view1">{{(('授权')===null || ('授权')===undefined || ('授权')==='') ? '' : ('授权')}}</view> 
+      </button>  
+      <button class="wx-btn" style="margin-top:8px;" id="button1" loading="{{button1.debounce}}" data-compid="{{button1.compid}}" data-bindtap="$evtH_button1_tap" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind"> 
+        <icon id="icon2" type="wx-btn-icon" class=" wx-icon"/>  
+        <view class="wx-btn-label" id="view3">{{(('暂时不授权')===null || ('暂时不授权')===undefined || ('暂时不授权')==='') ? '' : ('暂时不授权')}}</view>
+      </button> 
+    </view>  
+    <view class="x-col x-col-flex-1" id="col2"/> 
+  </view> 
+<view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}"><view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view></view></view>

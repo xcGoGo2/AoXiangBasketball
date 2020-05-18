@@ -1,0 +1,113 @@
+.x-pc{
+	font-size: 14px;
+}  
+
+.x-pc.x-page{
+	padding: 8px;
+}
+
+.x-pc .weui-cell{
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+.x-pc .weui-cell-full .weui-cell{
+    width: 100%!important;
+    padding: 8px 15px; 
+}
+
+.x-pc.weui-cell2 .weui-cell{
+    width: 50%; 
+}
+
+.x-pc.weui-cell3 .weui-cell{
+    width: 33.33%;
+}
+
+.x-pc .weui-cell:before,
+.x-pc .weui-cells:before,
+.x-pc .weui-cells:after{
+    display: none;
+}
+
+.x-pc .weui-cell__ft .weui-vcode-btn{
+	border-left: none;
+}
+
+.x-pc .weui-cell__ft .wx-btn{
+	width: auto;
+}
+
+.x-pc .label-edit.weui-cell {
+    display: block;
+    width: 100%;
+}
+
+.x-pc.weui-cell2 .money.label-edit>.weui-cell {
+    width: 50%;
+}
+
+.x-pc.weui-cell3 .money.label-edit>.weui-cell {
+    width: 33.33%;
+}
+
+.x-pc.weui-cell2 .date-between.label-edit>.weui-cell {
+    width: 50%;
+}
+
+.x-pc.weui-cell3 .date-between.label-edit>.weui-cell {
+    width: 33.33%;
+}
+
+.x-pc .weui-select .select-value-view{
+	min-height: auto;
+}
+
+.x-pc .weui-cell_select .weui-select,
+.x-pc .weui-cell__bd.x-pop-radio-group.weui-select{
+    border: 1px solid #d9d9d9 !important;
+    border-radius: 4px;
+    padding: 0 11px;    
+}
+
+.x-pc .weui-input{
+    height: 2.58823529em;
+    min-height: 2.58823529em;
+    line-height: 2.58823529em;
+}
+
+.x-pc .weui-input,
+.x-pc .weui-cell_textarea_body{
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 0 11px;
+    flex: 1 1 0%;    
+}
+
+.x-pc .info_text{
+    display: block;
+}
+
+.x-pc .x-label-textarea.weui-cell{
+    align-items: center;
+    flex-direction: row;
+}
+
+.x-pc .x-label-textarea .weui-cell_textarea_label{
+    width: 105px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 0;
+    display: block;   
+}
+
+.x-pc .x-label-textarea .weui-textarea{
+    height: 240px;
+}
+
+.x-pc .wx-btn{
+    width: 240px;
+    margin: 0;
+    line-height: normal;
+    padding: 6px;
+}

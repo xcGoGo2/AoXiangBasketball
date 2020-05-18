@@ -1,0 +1,14 @@
+@import "./fonts/common/icons.wxss";
+@import "./fonts/dataControl/dataControl.icons.wxss";
+@import "./fonts/e-commerce/e-commerce.icons.wxss";
+@import "./fonts/linear/linear.icons.wxss";
+@import "./fonts/round/round.icons.wxss";
+@import "./fonts/glyphicon/glyphicon.wxss";
+
+icon {
+	font-size: inherit;
+}
+
+.wx-icon{
+	vertical-align: baseline;
+}

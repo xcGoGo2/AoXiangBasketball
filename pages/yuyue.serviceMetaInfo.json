@@ -1,0 +1,37 @@
+{
+	"authorize":{
+		"permissions":[{
+			"code":"*:/main/yuyue.w:get",
+			"id":"main_yuyue.w",
+			"name":"预约",
+			"type":"menu",
+			"ui":false
+		}],
+		"roles":[{
+			"code":"authc",
+			"id":"authc",
+			"name":"注册用户",
+			"permissions":["*:/main/yuyue.w:get"]
+		}]
+	},
+	"menu":{
+		"children":[
+			{
+				"children":[],
+				"ext":{},
+				"order":0,
+				"title":"预约",
+				"types":["func"],
+				"url":"/main/yuyue.w"
+			}
+		],
+		"ext":{},
+		"order":0,
+		"title":"鼎壹房产",
+		"types":[]
+	},
+	"serviceInfo":{
+		"label":"鼎壹房产",
+		"name":"dingsheng"
+	}
+}

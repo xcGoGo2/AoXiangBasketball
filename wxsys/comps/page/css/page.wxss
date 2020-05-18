@@ -1,0 +1,8 @@
+/*TODO：page组件不应该依赖第三方样式，但H5需要才引入*/
+@import "../../weui/css/weui.wxss";
+page{
+	height: 100%;
+}
+.x-page{
+	min-height: 100%;
+}

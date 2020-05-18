@@ -1,49 +1,40 @@
-<!--pages/order/order.wxml-->
-<view class="order_container">
-	<!-- 预约标题 -->
-	<view class="order_title">
-		<view class="order_title_c">预约打球</view>
-		<view class="order_title_e">consulation</view>
-	</view>
-	<form catchsubmit="formSubmit" catchreset="formReset">
-		<view class="order_container">
 
-			<!-- 姓名 -->
-			<view class="weui_container">
-				<view class="weui-cells__title">姓名<span style="color: red">*</span></view>
-				<view class="weui-cell_input">
-					<input class="name-input" auto-focus placeholder-style="font-size: 12px" placeholder-style="font-size: 12px" placeholder="请输入姓名" />
-				</view>
-			</view>
+<!-- wxml -->
+<view class="x-page" id="page" navigationBarBackgroundColor="#58ABED" navigationBarTextStyle="white" navigationBarTitleText="预约打球" data-compid="{{page.compid}}" data-pageid="{{__pageid__}}">
 
-			<!-- 电话 -->
-			<view class="weui_container">
-				<view class="weui-cells__title">电话<span style="color: red">*</span></view>
-				<view class="weui-cell_input">
-					<input class="phone-input" placeholder-style="font-size: 12px" auto-focus placeholder="电话" />
-				</view>
-			</view>
-
-			<!-- 预约时间 -->
-			<view class="weui_container">
-				<view class="weui-cells__title">预约时间<span style="color: red">*</span></view>
-				<view class="weui-cell_input">
-					<input class="time-input" placeholder-style="font-size: 12px" auto-focus placeholder="请输入预约时间" />
-				</view>
-			</view>
-
-			<!-- 预约备注 -->
-			<view class="weui_container">
-				<view class="weui-cells__title">预约备注</view>
-				<view class="weui-cell_input">
-					<textarea class="tip-input" placeholder-style="font-size: 12px" placeholder="备注"></textarea>
-				</view>
-			</view>
-
-			<!-- 提交 -->
-			<view class="btn-area">
-				<button style="margin: 30rpx 20px" type="warn" formType="submit">提交</button>
-			</view>
-		</view>
-	</form>
+<view class="weui-loader-full {{_random1.loadingNum == 0 ?'weui-loader-hide':''}}" id="_random1">
+<view class="ball-scale-ripple-multiple">
+<view class="weui-loader-view"/>
+<view class="weui-loader-view"/>
+<view class="weui-loader-view"/></view></view>
+<view id="inVisibleCompContainer">
 </view>
+<view class="x-row" id="row">
+<view class="x-col" id="col1" style="text-align: center">
+<text id="text" style="color:#f35b5a;font-size:15px;display:block;margin-bottom:0px;padding-bottom:0px">{{text.text}}</text>
+<text id="text1" style="font-size:12px;color:#999999;margin-top:0px">{{text1.text}}</text></view></view>
+<view class="x-row" id="row1">
+<view class="x-col" id="col5" style="padding-left:10px;padding-right:10px">
+<text id="text2">{{text2.text}}</text>
+<text id="text3" style="color:#f35b5a">{{text3.text}}</text>
+<input id="input" placeholder="" style="border:1px solid #EEEEEE; {{((tableData.current._userdata && tableData.current._userdata.fxingming && tableData.current._userdata.fxingming.hidden)) ? 'display:none!important' : ''}}" class="{{(tableData.current._userdata && tableData.current._userdata.fxingming && tableData.current._userdata.fxingming.readonly)?'readonly':''}}" value="{{tableData.current.fxingming}}" type="text" data-compid="{{input.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input.compid}}:onChange" data-bindinput="clickName,{{input.compid}}:onInput" disabled="{{(tableData.current._userdata && tableData.current._userdata.fxingming && tableData.current._userdata.fxingming.readonly)}}"></input></view></view>
+<view class="x-row" id="row2">
+<view class="x-col" id="col8" style="padding-left:10px;padding-right:10px">
+<text id="text4" style="">{{text4.text}}</text>
+<text id="text5" style="color:#f35b5a">{{text5.text}}</text>
+<input id="input1" placeholder="" style="border:1px solid #EEEEEE; {{((tableData.current._userdata && tableData.current._userdata.fdianhua && tableData.current._userdata.fdianhua.hidden)) ? 'display:none!important' : ''}}" class="{{(tableData.current._userdata && tableData.current._userdata.fdianhua && tableData.current._userdata.fdianhua.readonly)?'readonly':''}}" value="{{tableData.current.fdianhua}}" type="text" data-compid="{{input1.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input1.compid}}:onChange" data-bindinput="clickNum,{{input1.compid}}:onInput" disabled="{{(tableData.current._userdata && tableData.current._userdata.fdianhua && tableData.current._userdata.fdianhua.readonly)}}"></input></view></view>
+<view class="x-row" id="row3">
+<view class="x-col" id="col11" style="padding-left:10px;padding-right:10px">
+<text id="text6">{{text6.text}}</text>
+<textarea class="weui-textarea WxTextarea {{(tableData.current._userdata && tableData.current._userdata.fyuyuerj && tableData.current._userdata.fyuyuerj.readonly)?'readonly':''}}" id="textarea" style="border-color:#eeeeee;border:1px solid #eeeeee;height:54px; {{((tableData.current._userdata && tableData.current._userdata.fyuyuerj && tableData.current._userdata.fyuyuerj.hidden)) ? 'display:none!important' : ''}}" value="{{tableData.current.fyuyuerj}}" data-compid="{{textarea.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{textarea.compid}}:onChange" data-bindinput="{{textarea.compid}}:onInput" disabled="{{(tableData.current._userdata && tableData.current._userdata.fyuyuerj && tableData.current._userdata.fyuyuerj.readonly)}}"></textarea></view></view>
+<view class="x-row" id="row4">
+<view class="x-col" id="col11" style="padding-left:10px;padding-right:10px">
+<text id="text6">{{text6.text}}</text>
+<textarea class="weui-textarea WxTextarea {{(tableData.current._userdata && tableData.current._userdata.fbeizhu && tableData.current._userdata.fbeizhu.readonly)?'readonly':''}}" id="textarea" style="border-color:#eeeeee;border:1px solid #eeeeee;height:54px; {{((tableData.current._userdata && tableData.current._userdata.fbeizhu && tableData.current._userdata.fbeizhu.hidden)) ? 'display:none!important' : ''}}" value="{{tableData.current.fbeizhu}}" data-compid="{{textarea.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{textarea.compid}}:onChange" data-bindinput="{{textarea.compid}}:onInput" disabled="{{(tableData.current._userdata && tableData.current._userdata.fbeizhu && tableData.current._userdata.fbeizhu.readonly)}}"></textarea></view></view>
+
+<view class="x-row" id="row4">
+<view class="x-col" id="col14" style="padding-left:10px;padding-right:10px">
+<button class="wx-btn" id="button" type="primary" loading="{{button.debounce}}" data-compid="{{button.compid}}" data-bindtap="submit" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind">
+<icon id="icon1" size="15" type="wx-btn-icon" class=" wx-icon"/>
+<view class="wx-btn-label" id="view1">{{(('提交')===null || ('提交')===undefined || ('提交')==='') ? '' : ('提交')}}</view></button></view></view><view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}"><view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view></view></view>
+<!-- wxml -->

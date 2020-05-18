@@ -1,0 +1,57 @@
+<view extends="$UI/wxsys/comps/user/userDialog/bindphone.w" id="page" class="x-page x-page" navigationBarTitleText="绑定手机" data-compid="{{page.compid}}" data-pageid="{{__pageid__}}">  
+  <view class="weui-loader-full {{_random1.loadingNum <= 0 ?'weui-loader-hide':''}}" style="z-index: 10001;" id="_random1">  
+    <view class="ball-scale-ripple-multiple"> 
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>  
+      <view class="weui-loader-view"/>
+    </view>
+  </view>  
+    
+  <view id="inVisibleCompContainer"/>  
+  <view id="view" style="height:40px"/>  
+  <icon id="icon3" size="40" type="safe_warn" style="margin-left:12px;"/>  
+  <text id="text" style="padding-left:12px">{{text.text}}</text>  
+  <view __id="id_18" class="weui-cells weui-cells_form  weui-cell-full" id="form"> 
+    <view __id="id_19" class="weui-cell weui-cell_input" id="cell1"> 
+      <view __id="id_20" class="weui-cell__hd" id="hd1"> 
+        <view __id="id_21" class="weui-label" id="label1"> 
+          <label __id="id_22" id="label2_1">{{(('手机号')===null || ('手机号')===undefined || ('手机号')==='') ? '' : ('手机号')}}</label>
+        </view>
+      </view>  
+      <view __id="id_23" class="weui-cell__bd" id="bd1"> 
+        <input __id="id_24" class="weui-input c-input {{(data.current._userdata && data.current._userdata.phonenumber && data.current._userdata.phonenumber.readonly)?'readonly':''}}" id="input1" placeholder="请输入手机号" value="{{data.current.phonenumber}}" type="text" data-compid="{{input1.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input1.compid}}:onChange" data-bindinput="{{input1.compid}}:onInput" disabled="{{(data.current._userdata && data.current._userdata.phonenumber && data.current._userdata.phonenumber.readonly)}}" style="{{((data.current._userdata && data.current._userdata.phonenumber && data.current._userdata.phonenumber.hidden)) ? 'display:none!important' : ''}}"/>
+      </view>
+    </view>  
+    <view __id="id_25" class="weui-cell weui-cell_input weui-cell_vcode" id="cell4"> 
+      <view __id="id_26" class="weui-cell__hd" id="hd4"> 
+        <view __id="id_27" class="weui-label" id="label4"> 
+          <label __id="id_28" id="label4_1">{{(('验证码')===null || ('验证码')===undefined || ('验证码')==='') ? '' : ('验证码')}}</label>
+        </view>
+      </view>  
+      <view __id="id_29" class="weui-cell__bd" id="bd4"> 
+        <input __id="id_30" class="weui-input c-input {{(data.current._userdata && data.current._userdata.verifyCode && data.current._userdata.verifyCode.readonly)?'readonly':''}}" id="input21" placeholder="请输入验证码" value="{{data.current.verifyCode}}" type="text" data-compid="{{input21.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input21.compid}}:onChange" data-bindinput="{{input21.compid}}:onInput" disabled="{{(data.current._userdata && data.current._userdata.verifyCode && data.current._userdata.verifyCode.readonly)}}" style="{{((data.current._userdata && data.current._userdata.verifyCode && data.current._userdata.verifyCode.hidden)) ? 'display:none!important' : ''}}"/>
+      </view>  
+      <view __id="id_31" class="weui-cell__ft" id="ft4"> 
+        <view __id="id_32" class="weui-vcode-btn" id="button2" data-compid="{{button2.compid}}" data-bindtap="sendSmsBtnClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind" disabled="{{ctrl.current.btnDisabled}}"> 
+          <label __id="id_33" id="label_vcode-btn">{{((ctrl.current.btnLabel)===null || (ctrl.current.btnLabel)===undefined || (ctrl.current.btnLabel)==='') ? '' : (ctrl.current.btnLabel)}}</label>
+        </view>
+      </view>
+    </view>
+  </view>  
+  <view class="x-row" id="row">  
+    <view class="x-col x-col-flex-1" id="col"/>  
+    <view class="x-col x-col-flex-8" id="col1"> 
+      <button class="wx-btn btn-ok" id="button" type="primary" style="margin-top:8px;" loading="{{button.debounce}}" data-compid="{{button.compid}}" data-bindtap="bindPhone" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind">  
+        <icon id="icon1" type="wx-btn-icon" class=" wx-icon"/>  
+        <view class="wx-btn-label" id="view2">{{(('绑定手机')===null || ('绑定手机')===undefined || ('绑定手机')==='') ? '' : ('绑定手机')}}</view>
+      </button>  
+      <button class="wx-btn btn-ok" id="button1" style="margin-top:8px;" loading="{{button1.debounce}}" data-compid="{{button1.compid}}" data-bindtap="$evtH_button1_tap" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind"> 
+        <icon id="icon2" type="wx-btn-icon" class=" wx-icon"/>  
+        <view class="wx-btn-label" id="view3">{{(('暂时不绑定')===null || ('暂时不绑定')===undefined || ('暂时不绑定')==='') ? '' : ('暂时不绑定')}}</view>
+      </button>
+    </view>  
+    <view class="x-col x-col-flex-1" id="col2"/>
+  </view>
+<view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}"><view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view></view></view>

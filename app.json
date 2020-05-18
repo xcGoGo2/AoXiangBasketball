@@ -3,7 +3,23 @@
     "pages/index/index",
     "pages/discount/discount",
     "pages/order/order",
-    "pages/test/test"
+    "pages/index",
+    "wxsys/comps/user/userDialog/user",
+    "pages/userDialog/user",
+    "wxsys/comps/user/userDialog/bindphone",
+    "pages/userDialog/changePassword",
+    "wxsys/comps/user/userDialog/register",
+    "pages/userDialog/login",
+    "pages/yuyue",
+    "wxsys/comps/user/userDialog/login",
+    "wxsys/comps/user/userDialog/authorize",
+    "pages/wode_yy",
+    "wxsys/comps/user/userDialog/forgetPassword",
+    "wxsys/comps/user/userDialog/changePassword",
+    "pages/userDialog/forgetPassword",
+    "pages/userDialog/register",
+    "pages/userDialog/authorize",
+    "pages/userDialog/bindphone"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,7 +37,7 @@
         "text": "联系客服"
       },
       {
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/yuyue",
         "selectedIconPath": "./images/global/ic_on/3.png",
         "iconPath": "./images/global/ic_on/4.png",
         "text": "在线预约"
@@ -31,13 +47,6 @@
         "selectedIconPath": "./images/global/ic_on/5.png",
         "iconPath": "./images/global/ic_on/6.png",
         "text": "支付抢订特惠名额"
-      }
-      ,
-      {
-        "pagePath": "pages/test/test",
-        "selectedIconPath": "./images/global/ic_on/5.png",
-        "iconPath": "./images/global/ic_on/6.png",
-        "text": "测试"
       }
     ]
   }

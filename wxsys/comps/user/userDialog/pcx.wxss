@@ -1,0 +1,50 @@
+/*行*/
+.x-pc.x-page .c-row{
+	padding-top:8px;
+	padding-bottom:8px;
+}
+
+.c-row{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.x-pc.x-page{
+		padding: 10px 10% 0 10%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.x-pc.x-page{
+		padding: 10px 10% 0 10%;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.x-pc.x-page{
+		padding: 10px 15% 0 15%;
+	}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.x-pc.x-page{
+		padding: 10px 20% 0 20%;
+	}
+}
+
+.x-pc.x-page .x-col{
+	text-align: center;		
+}
+
+.x-pc.x-page .btn-ok{
+	display: inline-flex;
+}
+
+.x-pc.x-page .weui-cell__ft .weui-vcode-btn{
+	border-left: none;
+}

@@ -1,0 +1,14 @@
+.c-overflow{
+overflow:hidden;
+display:-webkit-box;
+-webkit-line-clamp:1;
+-webkit-box-orient:vertical;
+}
+
+.c-overflow1{
+overflow:hidden;
+display:-webkit-box;
+-webkit-line-clamp:10;
+-webkit-box-orient:vertical;
+}
+

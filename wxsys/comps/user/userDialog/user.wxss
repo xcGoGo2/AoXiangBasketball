@@ -1,0 +1,29 @@
+ 
+ @import '../../row/css/row.wxss';
+ 
+ @import '../../image/css/image.wxss';
+ 
+ @import '../../page/css/page.wxss';
+ 
+ @import '../../icon/css/icon.wxss';
+ 
+ @import '../../toptips/css/toptips.wxss';
+
+@import "./pcx.wxss";
+
+/*行*/
+.c-row{
+	padding:16px;
+	border-bottom: 1px solid #dddddd;
+}
+
+/*首行标题*/
+.c-title{
+	height:100px;
+}
+
+.c-input{
+	border: 1px solid #dddddd;
+	border-radius: 4px;	
+}
+

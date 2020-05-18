@@ -1,0 +1,14 @@
+ 
+ @import '../../wxsys/comps/icon/css/icon.wxss';
+ 
+ @import '../../wxsys/comps/input/css/input.wxss';
+ 
+ @import '../../wxsys/comps/button/css/button.wxss';
+ 
+ @import '../../wxsys/comps/row/css/row.wxss';
+ 
+ @import '../../wxsys/comps/page/css/page.wxss';
+ 
+ @import '../../wxsys/comps/toptips/css/toptips.wxss';
+ 
+ @import '../../wxsys/comps/user/userDialog/register.wxss';

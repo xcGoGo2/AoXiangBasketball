@@ -1,0 +1,135 @@
+@import "../../weui/css/weui.wxss";
+.wx-btn {
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wx-btn>icon {
+	font-size: inherit;
+}
+
+.wx-btn-icon-top {
+/* 	height:48px; */
+	/* padding: 14px; */
+	-webkit-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-direction: column;
+	flex-flow: column;
+	font-size: medium;
+}
+
+.wx-btn-icon-bottom {
+	/* height:48px; */
+	/* padding: 14px; */
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-webkit-flex-flow: column-reverse;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	flex-flow: column-reverse;
+	font-size: medium;
+}
+
+
+.wx-btn-icon-bottom>icon,
+.wx-btn-icon-bottom>view,
+.wx-btn-icon-top>icon,
+.wx-btn-icon-top>view{
+    line-height: 1.5;
+}
+
+.wx-btn-icon-left {
+	-webkit-flex-flow: row;
+	-webkit-flex-direction: row;
+	flex-flow: row;
+	flex-direction: row;
+}
+
+.wx-btn-icon-left>icon {
+	margin-right: 14px;
+}
+
+.wx-btn-icon-right {
+	-webkit-flex-flow: row-reverse;
+	-webkit-box-direction: reverse;
+	-webkit-flex-direction: row-reverse;
+	flex-flow: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.wx-btn-icon-right>icon {
+	margin-left: 14px;
+}
+
+.wx-btn[size='mini']	{
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+}
+
+.wx-btn[size='mini']:before	{
+	height: 18px;
+    content: ' ';	
+}
+
+.wx-btn-icon-top[size='mini'] {
+	padding-top: 5px;
+}
+
+.wx-btn-icon-bottom[size='mini'] {
+	padding-bottom: 5px;
+}
+
+.wx-btn-icon-right[size='mini'] icon {
+	margin-left: 5px;
+}
+
+.wx-btn.button-hover>icon {
+	opacity: 0.6;
+}
+
+.wx-btn-only-icon>view {
+	display: none;	
+}
+
+.wx-btn-only-icon>icon {
+	margin-right: 0;	
+}
+
+.wx-btn-only-label>icon {
+	display: none;
+}
+
+.wx-btn-circle {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	
+    height: 72px;
+    width: 72px;
+}
+
+.wx-btn-circle[size='mini']{
+    height: 64px;
+    width: 64px;
+}
+
+.wx-btn-circle,.wx-btn-circle::after {
+	border-radius: 50%;
+}
+
+.wx-btn-noborder,.wx-btn-noborder::after{
+	border: none !important;
+	/*
+	background-color: transparent;
+	border-radius: 0;
+	*/
+}

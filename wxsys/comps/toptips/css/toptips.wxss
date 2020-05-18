@@ -1,0 +1,44 @@
+@import "../../weui/css/weui.wxss";
+
+.wx-toptips {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 5000;
+}
+
+.wx-toptips-item{
+  -webkit-transform: translateZ(0) translateY(-200%);
+  /* 至少有一行的高度，保证第一次动画显示正常 */
+  min-height: 24px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  padding: 4px;
+
+  /* 动画部分 */
+  transition: all 0.4s ease;
+}
+
+.wx-toptips--show {
+  -webkit-transform: translateZ(0) translateY(0);
+}
+
+.wx-toptips_success {
+  background-color: #4b0;
+  color: #FFF;
+}
+
+.wx-toptips_info {
+  background-color: #EEE8AA;
+  color: #222;
+}
+
+.wx-toptips_warn {
+  background-color: #E64340;
+  color: #FFF;
+}
