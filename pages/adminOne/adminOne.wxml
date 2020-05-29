@@ -1,0 +1,8 @@
+<!--pages/adminOne/adminOne.wxml-->
+<view class="admin_container">
+	<view class="admin_box">
+		<input class="admin-input" bindinput="adminNum" number type="text" placeholder="请输入管理员密匙" />
+	</view>
+  <button class="goAdmin" bindtap="goUser">确认</button>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+</view>

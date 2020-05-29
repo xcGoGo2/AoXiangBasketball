@@ -1,2 +1,70 @@
-<!--main/userDialog/login.wxml-->
-<text>main/userDialog/login.wxml</text>
+<view extends="$UI/wxsys/comps/user/userDialog/login.w" id="page" class="x-page" navigationBarTitleText="登录" data-compid="{{page.compid}}" data-pageid="{{__pageid__}}">  
+    
+  <view id="inVisibleCompContainer1">
+  </view>  
+  
+  <view id="form" class="weui-cells weui-cells_form weui-cell-full" style="{{(form.hidden) ? 'display:none!important' : ''}}"> 
+    <view id="cell1" class="weui-cell weui-cell_input"> 
+      <view id="hd1" class="weui-cell__hd"> 
+        <view id="label1" class="weui-label"><label id="label1_1">{{(('登录账号')===null || ('登录账号')===undefined || ('登录账号')==='') ? '' : ('登录账号')}}</label></view> 
+      </view>  
+      <view id="bd1" class="weui-cell__bd"> 
+        <input class="weui-input {{(loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.readonly)?'readonly':''}}" id="input1" placeholder="可使用用户名、手机号、邮箱" value="{{loginData.current.name}}" type="text" data-compid="{{input1.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input1.compid}}:onChange" data-bindinput="{{input1.compid}}:onInput" disabled="{{(loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.readonly)}}" style="{{((loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.hidden)) ? 'display:none!important' : ''}}"/> 
+      </view> 
+    </view>  
+    <view id="cell2" class="weui-cell weui-cell_input"> 
+      <view id="hd21" class="weui-cell__hd">
+        <view id="label2" class="weui-label"><label id="label2_1">{{(('密码')===null || ('密码')===undefined || ('密码')==='') ? '' : ('密码')}}</label></view>
+      </view>  
+      <view id="bd2" class="weui-cell__bd"> 
+        <input class="weui-input {{(loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.readonly)?'readonly':''}}" password="{{true}}" id="input2" placeholder="密码" value="{{loginData.current.password}}" type="text" data-compid="{{input2.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input2.compid}}:onChange" data-bindinput="{{input2.compid}}:onInput" disabled="{{(loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.readonly)}}" style="{{((loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.hidden)) ? 'display:none!important' : ''}}"/> 
+      </view> 
+      <view class="weui-cell__ft" id="ft1" style="{{(!ctrl.current.useSmsService) ? 'display:none!important' : ''}}"> 
+        <view class="weui-vcode-btn" id="button3" data-compid="{{button3.compid}}" data-bindtap="btnForgetClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind"> 
+          <label __id="id_34" id="label4">{{(('忘记密码')===null || ('忘记密码')===undefined || ('忘记密码')==='') ? '' : ('忘记密码')}}</label>
+        </view>
+      </view>       
+    </view> 
+  </view>  
+  <view id="form3" class="weui-cells weui-cells_form weui-cell-full" style="{{(form3.hidden) ? 'display:none!important' : ''}}"> 
+    <view id="cell3_1" class="weui-cell weui-cell_input"> 
+      <view id="hd3_1" class="weui-cell__hd"> 
+        <view id="label3_1" class="weui-label"><label id="label3_1_1">{{(('手机号')===null || ('手机号')===undefined || ('手机号')==='') ? '' : ('手机号')}}</label></view> 
+      </view>  
+      <view id="bd3_1" class="weui-cell__bd"> 
+        <input class="weui-input {{(loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.readonly)?'readonly':''}}" id="input3_1" placeholder="请输入手机号" value="{{loginData.current.name}}" type="text" data-compid="{{input3_1.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input3_1.compid}}:onChange" data-bindinput="{{input3_1.compid}}:onInput" disabled="{{(loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.readonly)}}" style="{{((loginData.current._userdata && loginData.current._userdata.name && loginData.current._userdata.name.hidden)) ? 'display:none!important' : ''}}"/> 
+      </view> 
+    </view>  
+    <view id="cell3_2" class="weui-cell weui-cell_input"> 
+      <view id="hd3_21" class="weui-cell__hd">
+        <view id="label3_2" class="weui-label"><label id="label3_2_1">{{(('验证码')===null || ('验证码')===undefined || ('验证码')==='') ? '' : ('验证码')}}</label></view>
+      </view>  
+      <view id="bd3_2" class="weui-cell__bd"> 
+        <input class="weui-input {{(loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.readonly)?'readonly':''}}" password="{{true}}" id="input3_2" placeholder="请输入验证码" value="{{loginData.current.password}}" type="text" data-compid="{{input3_2.compid}}" bindblur="dispatchBind" data-pageid="{{__pageid__}}" bindinput="dispatchBind" data-bindblur="{{input3_2.compid}}:onChange" data-bindinput="{{input3_2.compid}}:onInput" disabled="{{(loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.readonly)}}" style="{{((loginData.current._userdata && loginData.current._userdata.password && loginData.current._userdata.password.hidden)) ? 'display:none!important' : ''}}"/> 
+      </view>
+      <view __id="id_31" class="weui-cell__ft" id="ft4"> 
+        <view __id="id_32" class="weui-vcode-btn" id="button2" data-compid="{{button2.compid}}" data-bindtap="sendSmsBtnClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind" disabled="{{ctrl.current.btnDisabled}}"> 
+          <label __id="id_33" id="label_vcode-btn">{{((ctrl.current.btnLabel)===null || (ctrl.current.btnLabel)===undefined || (ctrl.current.btnLabel)==='') ? '' : (ctrl.current.btnLabel)}}</label>
+        </view>
+      </view>       
+    </view> 
+  </view>
+  <view class="x-row c-row" id="row4"> 
+    <view class="x-col x-col-10" id="col1"/>  
+    <view class="x-col" id="col2"> 
+  		<button id="button1" class="wx-btn btn-ok" type="primary" loading="{{button1.debounce}}" data-compid="{{button1.compid}}" data-bindtap="loginBtnClick" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind"><icon id="button1-icon" type="wx-btn-icon" class=" wx-icon"/><view id="button1-label" class="wx-btn-label">{{(('登录')===null || ('登录')===undefined || ('登录')==='') ? '' : ('登录')}}</view></button>  
+    </view>  
+    <view class="x-col x-col-10" id="col3"/> 
+  </view> 
+  <view class="x-row c-row" id="row5"> 
+    <view class="x-col x-col-10" id="col13"/>  
+    <view class="x-col" id="col15" style="text-align: center"> 
+      <label id="label3" style="color:#2fa4e7" data-compid="{{label3.compid}}" data-bindtap="regBtnClick" data-pageid="{{__pageid__}}" bindtap="dispatchBind">{{(('用户注册')===null || ('用户注册')===undefined || ('用户注册')==='') ? '' : ('用户注册')}}</label> 
+    </view>  
+    <view class="x-col" id="col14" style="text-align: center; {{(!ctrl.current.useSmsService) ? 'display:none!important' : ''}}"> 
+      <label id="label9" style="color:#2fa4e7; {{(label9.hidden) ? 'display:none!important' : ''}}" data-compid="{{label9.compid}}" data-bindtap="$evtH_label9_tap" data-pageid="{{__pageid__}}" bindtap="dispatchBind">{{(('短信验证码登录')===null || ('短信验证码登录')===undefined || ('短信验证码登录')==='') ? '' : ('短信验证码登录')}}</label> 
+      <label id="label10" style="color:#2fa4e7; {{(label10.hidden) ? 'display:none!important' : ''}}" data-compid="{{label10.compid}}" data-bindtap="$evtH_label10_tap" data-pageid="{{__pageid__}}" bindtap="dispatchBind">{{(('密码登录')===null || ('密码登录')===undefined || ('密码登录')==='') ? '' : ('密码登录')}}</label> 
+    </view>  
+    <view class="x-col x-col-10" id="col16"/> 
+  </view> 
+<view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}"><view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view></view></view>

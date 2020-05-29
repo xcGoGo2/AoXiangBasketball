@@ -6,8 +6,8 @@
 */
 @font-face {
   font-family: "Ionicons";
-  src: url("https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.eot?v=1.4.1") ;
-  src: url("https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.eot?v=1.4.1#iefix")  format("embedded-opentype"), url("https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.ttf?v=1.4.1")  format("truetype"), url("https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.woff?v=1.4.1")  format("woff"), url("https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.svg?v=1.4.1#Ionicons")  format("svg");
+  src: url("https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.eot?v=1.4.1") ;
+  src: url("https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.eot?v=1.4.1#iefix")  format("embedded-opentype"), url("https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.ttf?v=1.4.1")  format("truetype"), url("https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.woff?v=1.4.1")  format("woff"), url("https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/common/ionicons.svg?v=1.4.1#Ionicons")  format("svg");
   font-weight: normal;
   font-style: normal; }
 

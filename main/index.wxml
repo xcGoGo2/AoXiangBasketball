@@ -1,2 +1,38 @@
-<!--main/index.wxml-->
-<text>main/index.wxml</text>
+<view class="x-page" id="page" style="">
+
+	<view id="inVisibleCompContainer">
+		<block appPath="$UI/main" autoBindPhone="true" autoLoadUserInfo="true" autoLogin="true" autoUpdateUserInfo="true" id="user" useOpenid="false" data="restData">
+		</block>
+	</view>
+	<view class="x-row" id="row">
+		<view class="x-col x-col-center" id="col" style="text-align:center;height:60px">
+			<text id="text1" style="font-family:微软雅黑,microsoft yahei;font-size:16px;position:absolute;top:20px;text-align:center;left:40px">{{text1.text}}</text></view>
+	</view>
+	<view class="x-row" id="row3">
+		<view class="x-col x-col-center" id="col9" style="text-align: center;background-color:#CC0000">
+			<image class="weui-img" id="image" mode="scaleToFill" src="{{image.url}}" style="width:243px;height:247px" />
+		</view>
+	</view>
+	<view class="x-row" id="row4">
+		<view class="x-col" id="col12" />
+		<view class="x-col" id="col15" />
+	</view>
+	<view class="x-row" id="row5">
+		<view class="x-col" id="col20" />
+		<view class="x-col" id="col17">
+			<button class="wx-btn" id="button" style="width:99px;font-size:12px;height:33px" type="warn" loading="{{button.debounce}}" bindtap="goHome">
+				<icon id="icon" size="15" type="wx-btn-icon" class=" wx-icon" />
+				<view class="wx-btn-label" id="view">{{(('返回首页')===null || ('返回首页')===undefined || ('返回首页')==='') ? '' : ('返回首页')}}</view>
+			</button></view>
+		<view class="x-col" id="col18" />
+		<view class="x-col" id="col21">
+			<button class="wx-btn" icon="icon-android-share" id="button4" plain="{{false}}" style="box-shadow:0px 0px 0px -4px;font-size:14px;width:116px;height:33px" type="warn" loading="{{button4.debounce}}" data-compid="{{button4.compid}}" data-bindtap="$evtH_button4_tap" data-pageid="{{__pageid__}}" bindtap="debounceDispatchBind">
+				<icon class="d-wx-icon icon-android-share wx-icon" id="icon4" size="15" type="wx-btn-icon" />
+				<view class="wx-btn-label" id="view4">{{(('分享抢订')===null || ('分享抢订')===undefined || ('分享抢订')==='') ? '' : ('分享抢订')}}</view>
+			</button></view>
+		<view class="x-col" id="col19" />
+	</view>
+	<view id="__toptips__" class="wx-toptips" style="{{(!__toptips__.show) ? 'display:none!important' : ''}}">
+		<view wx:for="{{__toptips__.msgs}}" wx:key="_key" class="wx-toptips-item {{item.typeClass}} {{item.show?'wx-toptips--show':''}}">{{item.message}}</view>
+	</view>
+</view>

@@ -1,8 +1,8 @@
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.eot') ;
-  src: url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.eot?#iefix')  format('embedded-opentype'), url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.woff2')  format('woff2'), url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.woff')  format('woff'), url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.ttf')  format('truetype'), url('https://dingsheng-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')  format('svg');
+  src: url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.eot') ;
+  src: url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.eot?#iefix')  format('embedded-opentype'), url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.woff2')  format('woff2'), url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.woff')  format('woff'), url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.ttf')  format('truetype'), url('https://fenxiang-app.newdaoapp.cn/mainapp/wxsys/comps/icon/css/fonts/glyphicon/glyphicons-halflings-regular.svg#glyphicons_halflingsregular')  format('svg');
 }
 .glyphicon {
   position: relative;

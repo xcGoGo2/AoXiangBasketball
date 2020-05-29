@@ -1,0 +1,15 @@
+<!--pages/user/user.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">姓名</view>
+    <view class="th">电话</view>
+    <view class="th ">活动</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="_id">
+    <view class="tr bg-g">
+      <view class="td">{{item.name}}</view>
+      <view class="td">{{item.phone}}</view>
+      <view class="td">{{item.about}}</view>
+    </view>
+  </block>
+</view>

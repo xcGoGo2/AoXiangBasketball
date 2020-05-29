@@ -1,0 +1,37 @@
+{
+	"authorize":{
+		"permissions":[{
+			"code":"*:/main/fenxiang_hb.w:get",
+			"id":"main_fenxiang_hb.w",
+			"name":"分享海报",
+			"type":"menu",
+			"ui":false
+		}],
+		"roles":[{
+			"code":"authc",
+			"id":"authc",
+			"name":"注册用户",
+			"permissions":["*:/main/fenxiang_hb.w:get"]
+		}]
+	},
+	"menu":{
+		"children":[
+			{
+				"children":[],
+				"ext":{},
+				"order":0,
+				"title":"分享海报",
+				"types":["func"],
+				"url":"/main/fenxiang_hb.w"
+			}
+		],
+		"ext":{},
+		"order":0,
+		"title":"空白模板",
+		"types":[]
+	},
+	"serviceInfo":{
+		"label":"空白模板",
+		"name":"fenxiang"
+	}
+}

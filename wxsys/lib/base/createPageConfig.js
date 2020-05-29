@@ -252,7 +252,13 @@ export default function createPageConfig(PageClass, template, methods, pageConfi
         dispatchBind: function(evt){
         	this.dispatch(evt, "bind");
         },
-        
+				
+				goHome: function() {
+					wx.navigateTo({
+						url: '/pages/index/index'
+		})
+				},
+
         debounceDispatchBind: function(evt){
         	var target = evt.currentTarget || evt.target;
         	var pageid = target.dataset.pageid;
