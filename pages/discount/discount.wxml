@@ -3,18 +3,18 @@
 	<view class="discount_bg">
 		<!-- 课程1 -->
 		<view class="class_main">
-			<image class="class_img" src="http://qncdn.cwcoolboy.xyz/img/特惠抢购1.png"></image>
+			<image class="class_img" src="https://s1.ax1x.com/2020/09/27/0AtGxU.png"></image>
 			<view class="class_text">
-				<text class="text_title">NO.1全年特惠班</text>
+				<text class="text_title">奥翔篮球 迎双节惠</text>
 				<view class="text_body">
-					<text>支付69元抵699元</text>
-					<text>送1188元豪华礼包</text>
+					<text>支付99元送价值160元</text>
+					<text>篮球一个+精品课5节</text>
 				</view>
-				<button class="buy_btn" bindtap="showModal1">￥69抢福利一</button>
+				<button class="buy_btn" bindtap="showModal1">￥99抢购</button>
 			</view>
 		</view>
 		<!-- 课程2 -->
-		<view class="class_main">
+		<!-- <view class="class_main">
 			<image class="class_img" src="http://qncdn.cwcoolboy.xyz/img/特惠抢购2.png"></image>
 			<view class="class_text">
 				<text class="text_title">NO.2暑假特惠班</text>
@@ -24,7 +24,7 @@
 				</view>
 				<button class="buy_btn" bindtap="showModal2">￥29抢福利二</button>
 			</view>
-		</view>
+		</view> -->
 
 		<!-- 弹出支付框1 -->
 		<view class="modal modal-bottom-dialog" hidden="{{hideFlag1}}">
@@ -34,20 +34,23 @@
 				<view class="dialog_container">
 					<view class="dialog_1">
 						<text>快来加入我们！</text>
-						<text>距离活动结束还有</text>
-						<view class="tip_container">
+						<text>活动即将结束....</text>
+						<!-- <view class="tip_container">
 							<text>{{d}}天</text>
 							<text>{{h}}小时</text>
 							<text>{{m}}分钟</text>
 							<text>{{s}}秒</text>
-						</view>
+						</view> -->
 					</view>
 					<view class="dialog_2">
-						<text class="tip">确认参与抢购福利一？</text>
-						<form bindsubmit="formSubmit" class="form">
-							 <input name='name' value='{{form.name}}' placeholder="您的姓名" />
-							 <input name='phone' value='{{form.phone}}' placeholder="您的号码" />
-							<button class="gobuyOne"  form-type="submit" type="warn">确认抢购</button>
+						<text class="tip">确认参与双节惠抢购活动？</text>
+						<form bindsubmit="formSubmit">
+							<view class="form">
+								<input name='name' value='{{form.name}}' placeholder="您的姓名" />
+								<input name='age' value='{{form.age}}' placeholder="您的年龄" />
+								<input name='phone' value='{{form.phone}}' placeholder="您的号码" />
+							</view>
+							<button class="gobuyOne" form-type="submit" type="warn">确认抢购</button>
 						</form>
 					</view>
 					<view class='Mcancel' bindtap='mCancel'>
@@ -77,9 +80,9 @@
 					<view class="dialog_2">
 						<text class="tip">确认参与抢购福利二？</text>
 						<form bindsubmit="formSubmit2" class="form">
-							 <input name='name' value='{{form.name}}' placeholder="请输入您的姓名" />
-							 <input name='phone' value='{{form.phone}}' placeholder="请输入您的号码" />
-							<button class="gobuyOne"  form-type="submit" type="warn">确认抢购</button>
+							<input name='name' value='{{form.name}}' placeholder="请输入您的姓名" />
+							<input name='phone' value='{{form.phone}}' placeholder="请输入您的号码" />
+							<button class="gobuyOne" form-type="submit" type="warn">确认抢购</button>
 						</form>
 					</view>
 					<view class='Mcancel' bindtap='mCancel'>

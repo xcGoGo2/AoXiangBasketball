@@ -10,11 +10,11 @@ exports.main = async (event, context) => {
     orderid
   } = event;
   const res = await cloud.cloudPay.unifiedOrder({
-    "body" : "NO1-全年特惠班",
+    "body" : "国庆活动",
     "outTradeNo" : orderid, // 订单
     "spbillCreateIp" : "127.0.0.1",
     "subMchId" : "1591772471",
-    "totalFee" : 6900,
+    "totalFee" : 9900,
     "envId": "go-w1pgy",
     "functionName": "payfunctionName",
     "nonceStr": "5K8264ILTKCH16CQ2553SI8ZNMTM67VM",

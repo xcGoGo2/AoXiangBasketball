@@ -2,28 +2,29 @@
 <view class="page-section-spacing">
 	<view class="index_container">
 		<!-- 首页p1 -->
-		<image class="index_p1" mode="scaleToFill" src="http://qncdn.cwcoolboy.xyz/img/首页-1-顶部海报.jpg"></image>
+		<image class="index_p1" mode="scaleToFill" src="https://s1.ax1x.com/2020/09/27/0AJGF0.jpg"></image>
 		<!-- 首页p2 -->
-		<view class="count">
-			<image class="index_p2" mode="scaleToFill" src="http://qncdn.cwcoolboy.xyz/images/65abe169c3dadd2c964edd2fb049be8.jpg"></image>
+		<!-- <view class="count"> -->
+			<!-- <image class="index_p2" mode="scaleToFill" src="http://qncdn.cwcoolboy.xyz/images/65abe169c3dadd2c964edd2fb049be8.jpg"></image> -->
 			<!-- 倒计时 -->
-			<view class="count_main">
+			<!-- <view class="count_main">
 				<text class="time">{{d}}：{{h}}：{{m}}：{{s}}</text>
 				<text class="time_mean" space="ensp">DAY  HOURS \t MIN \t SEC</text>
-			</view>
-		</view>
+			</view> -->
+		<!-- </view> -->
 		<!-- 首页p3 -->
-		<image class="index_p3" mode="scaleToFill" src="http://qncdn.cwcoolboy.xyz/img/首页-3-抢购数字显示.jpg"></image>
+		<!-- <image class="index_p3" mode="scaleToFill" src="http://qncdn.cwcoolboy.xyz/img/首页-3-抢购数字显示.jpg"></image> -->
 		<!-- 首页p4 -->
-		<swiper class='u-wrp-bnr' vertical autoplay='true' interval='5000' duration='1000' circular='true'>
+		<!-- <swiper class='u-wrp-bnr' vertical autoplay='true' interval='5000' duration='1000' circular='true'>
 			<block wx:for="{{bnrUrl}}" wx:key="id" wx:for-index="index">
 				<swiper-item>
 					<image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
 				</swiper-item>
 			</block>
-		</swiper>
+		</swiper> -->
 		<!-- 首页p5 -->
-		<image class="index_p5" mode='widthFix' src="http://qncdn.cwcoolboy.xyz/images/合并.jpg"></image>
+		<image class="index_p5" mode='widthFix' src="https://s1.ax1x.com/2020/09/27/0AJUlF.jpg"></image>
+		<image class="index_p5" mode='widthFix' src="https://s1.ax1x.com/2020/09/27/0AJDT1.jpg"></image>
 
 		<!-- 管理员按钮 -->
 		<image bindtap="goAdmin" src="http://qncdn.cwcoolboy.xyz/images/钻石.png" class="goAdmin" ></image>
@@ -35,63 +36,6 @@
 				<text class="bottom_title">   联系客服</text>
 			</view>
 			<button class="bottom_button" bindtap="goBuy" type="warn">支付抢订特惠名额</button>
-		</view>
-
-		<!-- 弹幕 -->
-		<view class="dm_container">
-			<!-- 显示区 -->
-			<view class="{{isChecked?'is_checked':'normal'}}">
-				<view class='displayGroup'>
-					<!-- top -->
-					<view class='dmGroup top' style="animation: dmAnimation2 35s linear infinite; ">
-						<view class='dmItem' wx:for="{{ dmData }}" wx:key="id" wx:if="{{ index < 10 }}">
-							<view class='dm'>
-								<view class='avatarBox'>
-									<image src='http://qncdn.cwcoolboy.xyz/img/wx{{item.avatar}}.png' class='avatar' mode='aspectFit'></image>
-								</view>
-								<text class='content'>{{ item.content }}</text>
-								<image src='{{ iconGood }}' class='icon good' mode='aspectFill'></image>
-								<text>{{ item.zanNumber }}</text>
-							</view>
-						</view>
-					</view>
-
-					<!-- mid -->
-					<view class='dmGroup mid' style="animation: dmAnimation2 30s linear 1s infinite; ">
-						<view class='dmItem' wx:for="{{ dmData }}" wx:if="{{ index > 9 && index < 20 }}" wx:key="id">
-							<view class='dm'>
-								<view class='avatarBox'>
-									<image src='http://qncdn.cwcoolboy.xyz/img/wx{{item.avatar}}.png' class='avatar' mode='aspectFit'></image>
-
-								</view>
-								<text class='content'>{{ item.content }}</text>
-								<image src='{{ iconGood }}' class='icon good' mode='aspectFill'></image>
-								<text>{{ item.zanNumber }}</text>
-							</view>
-						</view>
-					</view>
-
-					<!-- btm -->
-					<view class='dmGroup btm' style="animation: dmAnimation2 45s linear infinite; ">
-						<view class='dmItem' wx:for="{{ dmData }}" wx:if="{{ index > 20 }}" wx:key="id">
-							<view class='dm'>
-								<view class='avatarBox'>
-									<image src='http://qncdn.cwcoolboy.xyz/img/wx{{item.avatar}}.png' class='avatar' mode='aspectFit'></image>
-
-								</view>
-								<text class='content'>{{ item.content }}</text>
-								<image src='{{ iconGood }}' class='icon good' mode='aspectFill'></image>
-								<text>{{ item.zanNumber }}</text>
-							</view>
-						</view>
-					</view>
-					<view class='shadowOverlay'></view>
-
-				</view>
-			</view>
-			<view bindtap="change" class="dm_button">
-				<image src="http://qncdn.cwcoolboy.xyz/img/{{dm_show?'dm_open':'dm_close'}}.png"></image>
-			</view>
 		</view>
 
 		<!-- 背景音乐 -->

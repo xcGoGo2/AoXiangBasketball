@@ -221,6 +221,7 @@ Page({
     DB.add({
       data: {
         name: this.data.form.name,
+        age: this.data.form.age,
         phone: this.data.form.phone,
         about: "活动一"
       },

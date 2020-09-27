@@ -38,8 +38,12 @@ discount_bg {
 }
 
 .text_title {
-  margin-top: 32px;
+  margin-top: 25px;
   margin-bottom: 11px;
+}
+
+.text_body {
+  font-size: 15px;
 }
 
 .buy_btn {
@@ -129,6 +133,12 @@ discount_bg {
 .dialog_2 button {
   position: absolute;
   margin-top: 20px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+
 }
 
 .tip_container {
@@ -141,5 +151,10 @@ discount_bg {
   top: 76px;
   left: 126.5px;
   right: 126.5px;
-}
+  /* border: 1px solid black; */
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+}

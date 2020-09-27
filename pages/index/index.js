@@ -129,7 +129,7 @@ Page({
   onShareAppMessage: function(res) {
     return {
       path: '/pages/index/index',
-      imageUrl:  "http://qncdn.cwcoolboy.xyz/images/分享海报-1.jpg",
+      imageUrl:  "https://s1.ax1x.com/2020/09/28/0AN6f0.jpg",
       success: function (shareTickets) {
         console.info(shareTickets + '成功');
         // 转发成功

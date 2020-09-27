@@ -428,7 +428,7 @@ var template = [
 	{
 		"cls":wx.compClass('$UI/wxsys/comps/image/image'),
 		"props":{
-			"src":"$model/UI2/main/images/zhifuchenggong.png",
+			"src":"https://s1.ax1x.com/2020/09/27/0AJOXQ.jpg",
 			"id":"image"
 		}
 	},
